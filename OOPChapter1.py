@@ -17,6 +17,9 @@ class Hero:
     def attack(self):
         self.monster.get_damage(self.damage)
 
+    def speed(self):
+        print('I am moving at the speed of')
+
 monster = Monster(100, 100)
 print(monster.health)
 hero = Hero(15, monster)
