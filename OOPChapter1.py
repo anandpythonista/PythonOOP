@@ -10,7 +10,7 @@ class Monster:
         self.health -= amount
     
     def weapon_status(self):
-        print ('I am without a weapon')
+        print ('I am without a weapon :-(')
         
 class Hero:
     def __init__(self, damage, monster):
