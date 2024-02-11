@@ -23,6 +23,10 @@ class Hero:
     def speed(self):
         print('I am moving at the speed of')
 
+class Shark:
+    def bite(self):
+        print('The Shark has bitten')
+
 monster = Monster(100, 100)
 print(monster.health)
 hero = Hero(15, monster)
