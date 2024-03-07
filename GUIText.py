@@ -20,7 +20,11 @@ class textFrame(tk.Frame):
         self.textbox.insert('1.0', file.read())
 
     def save_file(self):
-        
+        filetypes = (('text file', '*.txt'), ('All files', '*.*'))
+        content = self.textbox.get('1.0', 'end')
+        filepath = filedialog.asksaveasfilename(filetypes=filetypes)
+        file = open(filepath, 'w')
+        file.write(content)
 
 class textBox(tk.Text):
     def __init__(self, container):
